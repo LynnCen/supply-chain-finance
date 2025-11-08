@@ -1,20 +1,39 @@
 {
   "name": "supply-chain-finance",
   "version": "1.0.0",
-  "description": "供应链金融管理后台系统",
+  "description": "供应链金融管理后台系统 - 基于React + TypeScript + Vite + Ant Design",
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:analyze": "vite build --mode analyze",
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css,json}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,css,json}\"",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules/.vite",
+    "prepare": "npx msw init public/ --save"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "ant-design",
+    "admin",
+    "dashboard",
+    "supply-chain",
+    "finance"
+  ],
+  "author": "lynncen",
+  "license": "MIT",
   "packageManager": "pnpm@10.13.1",
+  "engines": {
+    "node": ">=20.19.0",
+    "pnpm": ">=8.0.0"
+  },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
     "ahooks": "^3.9.6",
