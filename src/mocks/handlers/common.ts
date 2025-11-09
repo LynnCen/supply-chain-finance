@@ -7,7 +7,7 @@ export const commonHandlers = [
       code: 0,
       data: {
         id: 1,
-        name: '1111管理员',
+        name: '系统管理员',
         role: 'admin',
         avatar: '',
       },

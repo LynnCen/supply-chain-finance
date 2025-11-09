@@ -6,15 +6,16 @@ import {
 } from '@ant-design/icons';
 import { Badge, Avatar, Dropdown, message } from 'antd';
 import type { MenuProps } from 'antd';
+import { useRequest } from 'ahooks';
 import { useGlobalStore } from '@/stores/useGlobalStore';
 import { getUserInfo } from '@/api/user';
-import { useQuery } from '@/hooks/useQuery';
+import type { UserInfo } from '@/types/user';
 
 const Header = () => {
   const { collapsed, toggleCollapsed } = useGlobalStore();
 
   // 获取用户信息
-  const { data: userInfoData, loading } = useQuery(getUserInfo, {
+  const { data: userInfoData, loading } = useRequest(getUserInfo, {
     onSuccess: data => {
       console.log('用户信息获取成功:', data);
     },
@@ -24,7 +25,7 @@ const Header = () => {
     },
   });
 
-  const userInfo = userInfoData?.data;
+  const userInfo = userInfoData?.data as UserInfo | undefined;
 
   const userMenuItems: MenuProps['items'] = [
     {
