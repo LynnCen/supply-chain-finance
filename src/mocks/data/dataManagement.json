@@ -1,0 +1,407 @@
+{
+  "statistics": {
+    "transactionCount": 1245,
+    "loanCount": 89,
+    "enterpriseCount": 156,
+    "financialCount": 432,
+    "totalCount": 1922,
+    "recentUploadCount": 15,
+    "lastUploadTime": "2025-11-10 14:30:00"
+  },
+  "transaction": {
+    "columns": [
+      {
+        "key": "id",
+        "title": "交易ID",
+        "dataIndex": "id",
+        "width": 120,
+        "fixed": "left"
+      },
+      {
+        "key": "transactionNo",
+        "title": "交易单号",
+        "dataIndex": "transactionNo",
+        "width": 180
+      },
+      {
+        "key": "enterpriseName",
+        "title": "企业名称",
+        "dataIndex": "enterpriseName",
+        "width": 200,
+        "ellipsis": true
+      },
+      {
+        "key": "amount",
+        "title": "交易金额（元）",
+        "dataIndex": "amount",
+        "width": 150,
+        "sorter": true
+      },
+      {
+        "key": "transactionType",
+        "title": "交易类型",
+        "dataIndex": "transactionType",
+        "width": 120,
+        "filters": [
+          { "text": "采购", "value": "purchase" },
+          { "text": "销售", "value": "sales" },
+          { "text": "退款", "value": "refund" }
+        ]
+      },
+      {
+        "key": "status",
+        "title": "状态",
+        "dataIndex": "status",
+        "width": 100,
+        "filters": [
+          { "text": "待确认", "value": "pending" },
+          { "text": "已完成", "value": "completed" },
+          { "text": "已取消", "value": "cancelled" }
+        ]
+      },
+      {
+        "key": "transactionDate",
+        "title": "交易时间",
+        "dataIndex": "transactionDate",
+        "width": 180,
+        "sorter": true
+      }
+    ],
+    "data": [
+      {
+        "id": "T001",
+        "transactionNo": "TR202511100001",
+        "enterpriseName": "上海智慧供应链科技有限公司",
+        "amount": 1500000,
+        "transactionType": "purchase",
+        "status": "completed",
+        "transactionDate": "2025-11-10 10:30:00"
+      },
+      {
+        "id": "T002",
+        "transactionNo": "TR202511100002",
+        "enterpriseName": "深圳创新物流集团",
+        "amount": 850000,
+        "transactionType": "sales",
+        "status": "completed",
+        "transactionDate": "2025-11-10 09:15:00"
+      },
+      {
+        "id": "T003",
+        "transactionNo": "TR202511090023",
+        "enterpriseName": "北京华信商贸有限公司",
+        "amount": 320000,
+        "transactionType": "purchase",
+        "status": "pending",
+        "transactionDate": "2025-11-09 16:45:00"
+      },
+      {
+        "id": "T004",
+        "transactionNo": "TR202511090022",
+        "enterpriseName": "广州天成贸易公司",
+        "amount": 680000,
+        "transactionType": "sales",
+        "status": "completed",
+        "transactionDate": "2025-11-09 14:20:00"
+      },
+      {
+        "id": "T005",
+        "transactionNo": "TR202511090021",
+        "enterpriseName": "杭州电子科技有限公司",
+        "amount": 1200000,
+        "transactionType": "purchase",
+        "status": "completed",
+        "transactionDate": "2025-11-09 11:30:00"
+      }
+    ]
+  },
+  "loan": {
+    "columns": [
+      {
+        "key": "id",
+        "title": "贷款ID",
+        "dataIndex": "id",
+        "width": 120,
+        "fixed": "left"
+      },
+      {
+        "key": "loanNo",
+        "title": "贷款编号",
+        "dataIndex": "loanNo",
+        "width": 180
+      },
+      {
+        "key": "enterpriseName",
+        "title": "企业名称",
+        "dataIndex": "enterpriseName",
+        "width": 200,
+        "ellipsis": true
+      },
+      {
+        "key": "loanAmount",
+        "title": "贷款金额（元）",
+        "dataIndex": "loanAmount",
+        "width": 150,
+        "sorter": true
+      },
+      {
+        "key": "interestRate",
+        "title": "利率（%）",
+        "dataIndex": "interestRate",
+        "width": 100
+      },
+      {
+        "key": "loanTerm",
+        "title": "贷款期限（月）",
+        "dataIndex": "loanTerm",
+        "width": 130
+      },
+      {
+        "key": "status",
+        "title": "状态",
+        "dataIndex": "status",
+        "width": 120,
+        "filters": [
+          { "text": "审批中", "value": "pending" },
+          { "text": "已放款", "value": "disbursed" },
+          { "text": "还款中", "value": "repaying" },
+          { "text": "已结清", "value": "completed" }
+        ]
+      },
+      {
+        "key": "applyDate",
+        "title": "申请时间",
+        "dataIndex": "applyDate",
+        "width": 180,
+        "sorter": true
+      }
+    ],
+    "data": [
+      {
+        "id": "L001",
+        "loanNo": "LN202511080001",
+        "enterpriseName": "上海智慧供应链科技有限公司",
+        "loanAmount": 5000000,
+        "interestRate": 5.6,
+        "loanTerm": 12,
+        "status": "disbursed",
+        "applyDate": "2025-11-08 10:00:00"
+      },
+      {
+        "id": "L002",
+        "loanNo": "LN202511070015",
+        "enterpriseName": "深圳创新物流集团",
+        "loanAmount": 3000000,
+        "interestRate": 5.8,
+        "loanTerm": 6,
+        "status": "repaying",
+        "applyDate": "2025-11-07 14:30:00"
+      },
+      {
+        "id": "L003",
+        "loanNo": "LN202511060032",
+        "enterpriseName": "北京华信商贸有限公司",
+        "loanAmount": 2000000,
+        "interestRate": 6.0,
+        "loanTerm": 12,
+        "status": "pending",
+        "applyDate": "2025-11-06 09:15:00"
+      }
+    ]
+  },
+  "enterprise": {
+    "columns": [
+      {
+        "key": "id",
+        "title": "企业ID",
+        "dataIndex": "id",
+        "width": 120,
+        "fixed": "left"
+      },
+      {
+        "key": "enterpriseName",
+        "title": "企业名称",
+        "dataIndex": "enterpriseName",
+        "width": 250,
+        "ellipsis": true
+      },
+      {
+        "key": "creditCode",
+        "title": "统一社会信用代码",
+        "dataIndex": "creditCode",
+        "width": 200
+      },
+      {
+        "key": "legalPerson",
+        "title": "法人代表",
+        "dataIndex": "legalPerson",
+        "width": 120
+      },
+      {
+        "key": "registeredCapital",
+        "title": "注册资本（万元）",
+        "dataIndex": "registeredCapital",
+        "width": 150,
+        "sorter": true
+      },
+      {
+        "key": "industry",
+        "title": "所属行业",
+        "dataIndex": "industry",
+        "width": 150,
+        "filters": [
+          { "text": "制造业", "value": "manufacturing" },
+          { "text": "贸易", "value": "trade" },
+          { "text": "物流", "value": "logistics" },
+          { "text": "科技", "value": "technology" }
+        ]
+      },
+      {
+        "key": "creditRating",
+        "title": "信用等级",
+        "dataIndex": "creditRating",
+        "width": 100
+      },
+      {
+        "key": "registerDate",
+        "title": "注册日期",
+        "dataIndex": "registerDate",
+        "width": 150
+      }
+    ],
+    "data": [
+      {
+        "id": "E001",
+        "enterpriseName": "上海智慧供应链科技有限公司",
+        "creditCode": "91310000MA1234567X",
+        "legalPerson": "张三",
+        "registeredCapital": 10000,
+        "industry": "technology",
+        "creditRating": "AAA",
+        "registerDate": "2020-05-15"
+      },
+      {
+        "id": "E002",
+        "enterpriseName": "深圳创新物流集团",
+        "creditCode": "91440300MA2345678Y",
+        "legalPerson": "李四",
+        "registeredCapital": 5000,
+        "industry": "logistics",
+        "creditRating": "AA",
+        "registerDate": "2019-08-20"
+      },
+      {
+        "id": "E003",
+        "enterpriseName": "北京华信商贸有限公司",
+        "creditCode": "91110000MA3456789Z",
+        "legalPerson": "王五",
+        "registeredCapital": 3000,
+        "industry": "trade",
+        "creditRating": "AA",
+        "registerDate": "2021-03-10"
+      },
+      {
+        "id": "E004",
+        "enterpriseName": "广州天成贸易公司",
+        "creditCode": "91440100MA4567890A",
+        "legalPerson": "赵六",
+        "registeredCapital": 2000,
+        "industry": "trade",
+        "creditRating": "A",
+        "registerDate": "2022-01-08"
+      }
+    ]
+  },
+  "financial": {
+    "columns": [
+      {
+        "key": "id",
+        "title": "报表ID",
+        "dataIndex": "id",
+        "width": 120,
+        "fixed": "left"
+      },
+      {
+        "key": "enterpriseName",
+        "title": "企业名称",
+        "dataIndex": "enterpriseName",
+        "width": 200,
+        "ellipsis": true
+      },
+      {
+        "key": "reportPeriod",
+        "title": "报表期间",
+        "dataIndex": "reportPeriod",
+        "width": 150
+      },
+      {
+        "key": "revenue",
+        "title": "营业收入（万元）",
+        "dataIndex": "revenue",
+        "width": 150,
+        "sorter": true
+      },
+      {
+        "key": "profit",
+        "title": "净利润（万元）",
+        "dataIndex": "profit",
+        "width": 150,
+        "sorter": true
+      },
+      {
+        "key": "assets",
+        "title": "总资产（万元）",
+        "dataIndex": "assets",
+        "width": 150,
+        "sorter": true
+      },
+      {
+        "key": "liabilities",
+        "title": "总负债（万元）",
+        "dataIndex": "liabilities",
+        "width": 150,
+        "sorter": true
+      },
+      {
+        "key": "reportDate",
+        "title": "报表日期",
+        "dataIndex": "reportDate",
+        "width": 150,
+        "sorter": true
+      }
+    ],
+    "data": [
+      {
+        "id": "F001",
+        "enterpriseName": "上海智慧供应链科技有限公司",
+        "reportPeriod": "2025年第三季度",
+        "revenue": 15000,
+        "profit": 2800,
+        "assets": 50000,
+        "liabilities": 18000,
+        "reportDate": "2025-10-31"
+      },
+      {
+        "id": "F002",
+        "enterpriseName": "深圳创新物流集团",
+        "reportPeriod": "2025年第三季度",
+        "revenue": 8500,
+        "profit": 1200,
+        "assets": 32000,
+        "liabilities": 12000,
+        "reportDate": "2025-10-31"
+      },
+      {
+        "id": "F003",
+        "enterpriseName": "北京华信商贸有限公司",
+        "reportPeriod": "2025年第三季度",
+        "revenue": 6200,
+        "profit": 850,
+        "assets": 18000,
+        "liabilities": 8500,
+        "reportDate": "2025-10-31"
+      }
+    ]
+  }
+}
+
