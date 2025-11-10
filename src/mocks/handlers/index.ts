@@ -2,6 +2,7 @@ import { commonHandlers } from './common';
 import { userHandlers } from './user';
 import { dataManagementHandlers } from './dataManagement';
 import { enterpriseDashboardHandlers } from './enterpriseDashboard';
+import { aiAssistantHandlers } from './aiAssistant';
 
 // 汇总所有Mock Handler
 export const handlers = [
@@ -9,4 +10,5 @@ export const handlers = [
   ...userHandlers,
   ...dataManagementHandlers,
   ...enterpriseDashboardHandlers,
+  ...aiAssistantHandlers,
 ];

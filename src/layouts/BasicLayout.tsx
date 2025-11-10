@@ -2,6 +2,7 @@ import { Layout } from 'antd';
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Sidebar from './Sidebar';
+import AIAssistant from '@/components/AIAssistant';
 import { useGlobalStore } from '@/stores/useGlobalStore';
 
 const { Header: AntHeader, Sider, Content } = Layout;
@@ -39,6 +40,7 @@ const BasicLayout = () => {
           </Content>
         </Layout>
       </Layout>
+      <AIAssistant />
     </Layout>
   );
 };

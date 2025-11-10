@@ -1,0 +1,90 @@
+{
+  "scenarios": [
+    {
+      "keywords": ["数据", "分析", "统计"],
+      "response": {
+        "stages": [
+          {
+            "type": "thinking",
+            "title": "思考中",
+            "content": "正在理解您的数据分析需求..."
+          },
+          {
+            "type": "analyzing",
+            "title": "分析中",
+            "content": "我发现您关心的是数据管理和统计分析功能。让我为您详细分析当前系统的数据处理能力。"
+          },
+          {
+            "type": "planning",
+            "title": "规划中",
+            "content": "我将从以下几个方面为您说明：\n1. 数据上传与导入\n2. 数据统计与可视化\n3. 数据导出功能"
+          },
+          {
+            "type": "completed",
+            "title": "已完成",
+            "content": "系统支持Excel和CSV格式的数据导入，提供实时统计卡片展示，并支持按不同维度查看和分析数据。您可以在数据管理页面进行相关操作。"
+          }
+        ]
+      }
+    },
+    {
+      "keywords": ["企业", "看板", "dashboard"],
+      "response": {
+        "stages": [
+          {
+            "type": "thinking",
+            "title": "思考中",
+            "content": "正在分析企业看板相关功能..."
+          },
+          {
+            "type": "analyzing",
+            "title": "分析中",
+            "content": "企业看板是供应链金融系统的核心功能，用于全方位展示企业的经营状况和财务健康度。"
+          },
+          {
+            "type": "completed",
+            "title": "已完成",
+            "content": "企业看板提供以下功能：\n✓ 企业基本信息展示\n✓ 财务健康雷达图\n✓ 交易趋势分析\n✓ 订单统计\n✓ 合作伙伴网络\n✓ 企业排行榜\n\n您可以在左侧菜单选择【企业看板】进入查看。"
+          }
+        ]
+      }
+    },
+    {
+      "keywords": ["帮助", "功能", "怎么用", "如何"],
+      "response": {
+        "stages": [
+          {
+            "type": "thinking",
+            "title": "思考中",
+            "content": "正在理解您的问题..."
+          },
+          {
+            "type": "completed",
+            "title": "已完成",
+            "content": "我是您的AI助手，可以帮助您：\n\n📊 了解系统功能和使用方法\n🔍 快速找到您需要的功能入口\n💡 提供操作建议和最佳实践\n❓ 解答您在使用过程中的疑问\n\n请随时告诉我您需要什么帮助！"
+          }
+        ]
+      }
+    }
+  ],
+  "defaultResponse": {
+    "stages": [
+      {
+        "type": "thinking",
+        "title": "思考中",
+        "content": "让我想想..."
+      },
+      {
+        "type": "analyzing",
+        "title": "分析中",
+        "content": "我正在分析您的问题..."
+      },
+      {
+        "type": "completed",
+        "title": "已完成",
+        "content": "感谢您的提问。我是供应链金融系统的AI助手，目前我可以帮您了解系统功能、使用方法等。请问您具体需要什么帮助呢？"
+      }
+    ]
+  }
+}
+
