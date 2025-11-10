@@ -148,3 +148,49 @@ body {
   margin: 4px 8px !important;
   width: calc(100% - 16px) !important;
 }
+
+/* ==================== 打印样式 ==================== */
+
+@media print {
+  /* 隐藏不需要打印的元素 */
+  aside,
+  header,
+  button,
+  .ant-btn,
+  .no-print {
+    display: none !important;
+  }
+
+  /* 调整打印布局 */
+  body {
+    background: white !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 确保图表清晰显示 */
+  .echarts-for-react {
+    page-break-inside: avoid;
+  }
+
+  /* 卡片样式优化 */
+  .ant-card {
+    box-shadow: none !important;
+    border: 1px solid #e0e0e0 !important;
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+  }
+
+  /* 分页控制 */
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* 确保颜色正常显示 */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
