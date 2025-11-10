@@ -25,7 +25,8 @@ const Header = () => {
     },
   });
 
-  const userInfo = userInfoData?.data as UserInfo | undefined;
+  // 自动类型推导，无需类型断言
+  const userInfo = userInfoData?.data;
 
   const userMenuItems: MenuProps['items'] = [
     {
