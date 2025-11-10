@@ -23,24 +23,114 @@ body {
   height: 100vh;
 }
 
-/* 自定义滚动条样式 */
+/* ==================== 自定义滚动条样式 ==================== */
+
+/* 全局滚动条 - 现代化设计 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.6) transparent;
+}
+
+/* Webkit 浏览器（Chrome, Safari, Edge）滚动条样式 */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
+  background: rgba(155, 155, 155, 0.5);
   border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
+  background: rgba(120, 120, 120, 0.7);
+}
+
+/* 细滚动条样式 - 用于小型容器 */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+/* 蓝色主题滚动条 - 用于重点区域 */
+.scrollbar-primary::-webkit-scrollbar-thumb {
+  background: rgba(22, 119, 255, 0.4);
+}
+
+.scrollbar-primary::-webkit-scrollbar-thumb:hover {
+  background: rgba(22, 119, 255, 0.6);
+}
+
+.scrollbar-primary {
+  scrollbar-color: rgba(22, 119, 255, 0.5) transparent;
+}
+
+/* 紫色主题滚动条 */
+.scrollbar-purple::-webkit-scrollbar-thumb {
+  background: rgba(114, 46, 209, 0.4);
+}
+
+.scrollbar-purple::-webkit-scrollbar-thumb:hover {
+  background: rgba(114, 46, 209, 0.6);
+}
+
+.scrollbar-purple {
+  scrollbar-color: rgba(114, 46, 209, 0.5) transparent;
+}
+
+/* 隐藏滚动条但保持功能 */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 表格滚动条样式 */
+.ant-table-body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.ant-table-body::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+  background: rgba(155, 155, 155, 0.6);
+  border-radius: 4px;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 120, 120, 0.8);
+}
+
+/* Select 下拉框滚动条 */
+.ant-select-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ant-select-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(22, 119, 255, 0.3);
+  border-radius: 3px;
+}
+
+.ant-select-dropdown::-webkit-scrollbar-thumb:hover {
+  background: rgba(22, 119, 255, 0.5);
 }
 
 /* Ant Design Menu 自定义样式 */
